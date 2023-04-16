@@ -42,32 +42,3 @@ for case_num in range(int(input().strip())):
     encoded_words.sort()
 
     print(f"Case #{case_num+1}: {'YES' if has_collision(encoded_words) else 'NO'}")
-
-
-# for i in range(int(input().strip())):
-#     values = [str(number) for number in input().strip().split(" ")]
-
-#     for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
-#         mapping[letter] = values.pop(0)
-
-#     items = set()
-
-#     for j in range(int(input().strip())):
-#         # Collision
-#         collision = False
-
-#         # Encode words and add to list
-#         cur = "".join([mapping[letter] for letter in input().strip()])
-
-#         # If collision found
-#         if cur in items:
-#             collision = True
-#             continue
-#         else:
-#             items.add(cur)
-
-#     out.append(f"Case #{cur_case_num}: {'YES' if collision else 'NO'}")
-
-#     cur_case_num += 1
-
-# print("\n".join(out))
